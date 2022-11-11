@@ -52,9 +52,10 @@ h2{
 }
 
 h3{
-
+    display:flex;
+    justify-content:space-evenly;
     font-family: 'Island Moments', cursive;
-    font-size: 80%;
+    font-size: 20px;
     text-align: center;
     text-shadow: rgb(0, 0, 0) 1.7px 2px;
     color:rgb(255, 0, 0);
