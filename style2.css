@@ -115,7 +115,7 @@ h4{
  #contact-form input:focus,   
  #contact-form select:focus,   
  #contact-form textarea:focus {  
-    background-image:url(memoirs.jpeg);
+    background-color:black;
     background-size:contain;
     background-repeat:no-repeat;
     background-position: center;
