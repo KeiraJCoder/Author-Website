@@ -115,7 +115,7 @@ h4{
  #contact-form input:focus,   
  #contact-form select:focus,   
  #contact-form textarea:focus {  
-    background-color:black;
+    background-color:white;
     background-size:contain;
     background-repeat:no-repeat;
     background-position: center;
