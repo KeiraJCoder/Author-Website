@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Manjari&family=Nothing+You+Could+Do&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding:.9%;
+}
+
+
+body{
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+.images{
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    width:30%;
+    padding-left:36%;
+}
+
+.about{
+    background-image: url(ezgif-2-278d5d9e4e.jpeg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    padding:10%;
+}
+
+.text{
+    color:black;
+    font-size: 120%;
+    background-color: rgba(255, 255, 255, 0.552);
+    text-shadow: whitesmoke 1px 0px;
+    padding:19px;
+}
+
+
+h2{
+    display:flex;
+    justify-content: center;
+    font-family: 'Island Moments', cursive;
+    font-size: 70px;
+    text-align: center;
+    text-shadow: rgb(248, 244, 244) 1.7px 2px;
+    color:rgb(14, 13, 29);
+}
+
+h3{
+    display:flex;
+    justify-content: center;
+    padding-left:21%;
+    font-family: 'Island Moments', cursive;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: rgb(0, 0, 0) 1.7px 2px;
+    color:rgb(255, 0, 0);
+}
+p{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.title1 {
+    color:rgb(0, 0, 0);
+    text-shadow: rgb(174, 0, 255) 5px 1px;
+}
+
+.profile{
+    display:flex;
+    justify-content: center;
+    width:10%;
+    border-radius: 100%;
+    border-style:groove;
+    border-color: rgb(117, 30, 199);
+}
+
+.welcome {
+    color:blueviolet;
+}
+
+
+#navbar{
+    background-color:rgb(0, 0, 0);
+    font-size:120%;
+    display:flex;
+    justify-content:space-evenly;
+    font-family: 'Dancing Script', cursive;
+    border-style: double;
+    border-color: rgb(64, 7, 130);
+
+}
+
+#navbar a{
+    color:whitesmoke;
+    padding-top: 30px;
+    text-decoration:none;
+    text-shadow: darkviolet 1px 0px;
+}
+
+#navbar a:hover{
+    color:red;
+}
+
+img {
+    
+    width:100%;
+}
+
+.top{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page1{
+    background-image: url(key.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.page3{
+    background-image: url(image.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+}
+
+img {
+    
+    width:100%;
+}
+
+h1{
+    display:flex;
+    justify-content:center;
+    color:rebeccapurple; 
+    font-size: 130px;
+    font-family: 'Island Moments', cursive;
+    text-align: center;
+    text-shadow: rgb(0, 0, 0) 1px 7px;
+}
+
+.icon{
+    width:5%;
+}
+
+.section{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    }
+
+.widget{
+    text-align: center;
+    display:flex;
+    justify-content: center;
+}
+
+#socials{
+    
+    display:flex;
+    justify-content: end;
+}
+
+#socials a{
+    color:white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.icon{
+    width:5%;
+}
+
+.twit{
+    width:6%;
+}
+
+.tik{
+    min-width:10%;
+}
+
+.books{
+    
+    display:flex;
+    flex-direction:row;
+    width:60%;
+    margin-left:20%;
+
+
+}
+
+.books2{
+    
+    display:flex;
+    width:50%;
+}
+
+
+    .color img{
+        display:flex;
+        justify-content:space-evenly;
+        flex-direction: column;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -webkit-transition: all 1s ease;
+        }
+        
+        .color img:hover{
+        filter: grayscale(0%);
+        filter: gray;
+        -webkit-filter: grayscale(0%);
+        filter: none;
+        transition: 1s ease;
+        }
+
+
+
+
+/* ________________________________________ */
+
+/* (A) FIXED WRAPPER */
+.hwrap {
+    overflow: hidden; /* HIDE SCROLL BAR */
+    background: rgb(88, 3, 141);
+}
+
+  /* (B) MOVING TICKER WRAPPER */
+.hmove { display: flex; }
+
+  /* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+.hitem {
+    flex-shrink: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Manjari', sans-serif;
+    color:whitesmoke;
+    text-shadow: black 1px 0px;
+}
+
+  /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+  /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+@keyframes tickerh {
+    0% { transform: translate3d(100%, 0, 0); }
+    100% { transform: translate3d(-400%, 0, 0); }
+}
+.hmove { animation: tickerh linear 49s infinite; }
+.hmove:hover { animation-play-state: paused; }
