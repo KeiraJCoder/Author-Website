@@ -99,6 +99,7 @@ h4{
     font-size: 15px;  
     margin-bottom: 2px;
     font-family: Arial, san-serif;
+    color:white;
  } 
  #contact-form input,   
  #contact-form select,   
@@ -115,7 +116,7 @@ h4{
  #contact-form input:focus,   
  #contact-form select:focus,   
  #contact-form textarea:focus {  
-
+    background-color: #000000; 
     background-size:contain;
     background-repeat:no-repeat;
     background-position: center;
